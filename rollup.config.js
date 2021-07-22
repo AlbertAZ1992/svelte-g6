@@ -1,6 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';
 import svelte from 'rollup-plugin-svelte';
 import autoPreprocess from 'svelte-preprocess';
 import { terser } from 'rollup-plugin-terser';
@@ -30,11 +30,13 @@ export default {
   ],
   plugins: [
     commonjs(),
-    typescript(),
+    typescript({ declaration: true, declarationDir: '' }),
     svelte({
-      dev: !production,
       preprocess: autoPreprocess(),
+      // compilerOptions: {css: false},
+      emitCss: false
     }),
+    // css(),
     resolve({
       dedupe: [
         'svelte',
