@@ -1,0 +1,47 @@
+{
+  "name": "svelte-g6",
+  "svelte": "src/index.ts",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "svelte-check": "svelte-check",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run svelte-check && npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "rollup": "^2.21.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^0.1.51",
+    "svelte-preprocess": "^4.0.8",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  },
+  "keywords": [
+    "@antv/g6",
+    "component",
+    "svelte-components",
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "description": "A Svelte component for graph visualization framework @antv/g6",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertAZ1992/svelte-g6.git"
+  },
+  "author": "Albert Zhang (https://github.com/AlbertAZ1992)",
+  "bugs": {
+    "url": "https://github.com/AlbertAZ1992/svelte-g6/issues"
+  },
+  "homepage": "https://github.com/AlbertAZ1992/svelte-g6#readme",
+  "license": "ISC"
+}
