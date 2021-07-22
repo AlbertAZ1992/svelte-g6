@@ -12,7 +12,8 @@ npm install --save svelte-g6
 
 ## Usage
 
-```
+```html
+<!-- App.svelte -->
 <script lang="ts">
 	import G6 from '@antv/g6';
 	import G6Component from 'svelte-g6';

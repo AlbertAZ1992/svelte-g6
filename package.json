@@ -1,5 +1,6 @@
 {
   "name": "svelte-g6",
+  "version": "0.0.1",
   "svelte": "src/index.ts",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -33,7 +34,6 @@
     "dist"
   ],
   "description": "A Svelte component for graph visualization framework @antv/g6",
-  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlbertAZ1992/svelte-g6.git"
