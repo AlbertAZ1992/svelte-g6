@@ -18,29 +18,33 @@ export default {
   output: [
     {
       file: pkg.module,
-      format: 'es',
+      format: 'esm',
       sourcemap: production,
     },
     {
       file: pkg.main,
       format: 'umd',
       name,
+      globals: {
+        svelte: 'svelte',
+        'svelte/internal': 'svelteInternal',
+      },
       sourcemap: production,
     },
   ],
+  external: ['svelte', 'svelte/internal'],
   plugins: [
+    resolve({
+      browser: true,
+      dedupe: importee =>
+        importee === 'svelte' || importee.startsWith('svelte/')
+    }),
     commonjs(),
     typescript({ declaration: true, declarationDir: '' }),
     svelte({
       preprocess: autoPreprocess(),
       // compilerOptions: {css: false},
       emitCss: false
-    }),
-    // css(),
-    resolve({
-      dedupe: [
-        'svelte',
-      ],
     }),
     production && terser(),
   ],

@@ -1,6 +1,6 @@
 {
   "name": "svelte-g6",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "svelte": "src/index.ts",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -11,9 +11,11 @@
     "prepublishOnly": "npm run svelte-check && npm run build"
   },
   "peerDependencies": {
-    "@antv/g6": ">=4.3.4"
+    "@antv/g6": ">=4.3.4",
+    "svelte": ">=3.34.0"
   },
   "devDependencies": {
+    "@antv/g6": "4.3.4",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "rollup": "^2.21.0",
