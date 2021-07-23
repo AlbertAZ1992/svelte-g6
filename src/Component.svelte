@@ -65,7 +65,6 @@
 
   $: {
     if (graph && (prevData !== data)) {
-      console.log('change data');
       graph.changeData(data);
       prevData = data;
     }
@@ -73,7 +72,6 @@
 
   $: {
     if (graph) {
-      console.log('bind events');
       Object.entries(prevEvents).forEach(([name, cb]) => {
         graph.off(name, cb);
       });
