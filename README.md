@@ -1,6 +1,18 @@
 # svelte-g6
 
-A Svelte component for graph visualization framework @antv/g6
+A Svelte component for [@antv/g6](https://github.com/antvis/g6)
+
+Inspired by [g6-in-react](https://github.com/baizn/g6-in-react)
+
+[![minified + gzip](https://badgen.net/bundlephobia/minzip/svelte-g6)](https://bundlephobia.com/result?p=svelte-g6)
+[![tree-shakeable](https://badgen.net/bundlephobia/tree-shaking/svelte-g6)](https://bundlephobia.com/result?p=svelte-g6)
+[![no dependencies](https://badgen.net/bundlephobia/dependency-count/svelte-g6)](https://bundlephobia.com/result?p=svelte-g6)
+
+
+<div>
+  <img height="32" src="https://gw.alipayobjects.com/zos/antfincdn/zS1wZZJVcJ/G6%252520tukeshihuayinqing.svg">
+  <img height="40" src="https://www.sveltejs.cn/svelte-logo-horizontal.svg">
+</div>
 
 ## Installation
 
