@@ -31,8 +31,8 @@ npm install --save svelte-g6
   import G6Component from 'svelte-g6';
   const options = {
     container: 'mountNode',
-    width: 800,
-    height: 500,
+    width: 400,
+    height: 400,
     workerEnabled: false,
   };
   const data = {
@@ -58,3 +58,7 @@ npm install --save svelte-g6
 </script>
 <G6Component {G6} {options} {data} />
 ```
+
+
+
+[![Edit compassionate-lalande-5lxm7](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/cocky-dust-xz09t?file=/App.svelte)
